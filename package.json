@@ -1,0 +1,24 @@
+{
+  "name": "non_relational_db_json_data",
+  "version": "1.0.0",
+  "main": "import.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeserobertosl-ui/non_relational_db_json_data.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeserobertosl-ui/non_relational_db_json_data/issues"
+  },
+  "homepage": "https://github.com/jeserobertosl-ui/non_relational_db_json_data#readme",
+  "description": "",
+  "dependencies": {
+    "csv-parser": "^3.2.0",
+    "mongodb": "^6.20.0"
+  }
+}
