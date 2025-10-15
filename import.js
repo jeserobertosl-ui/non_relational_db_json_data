@@ -1,10 +1,6 @@
-const
-{
-  MongoClient,
-  ObjectId
-} = require('mongodb');
+const { MongoClient, ObjectId } = require( 'mongodb');
 
-const fs = require('fs');
+const { createReadStream } = require('fs');
 const csv = require('csv-parser');
 
 const url = 'mongodb://localhost:27017';
@@ -20,7 +16,7 @@ async function importRestaurants()
     const collection = db.collection('clln_restaurants');
     const results = [];
 
-    fs.createReadStream('restaurants.csv')
+    createReadStream('restaurants.csv')
     .pipe(csv())
     .on('data', (data) => 
     {
